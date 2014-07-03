@@ -6,14 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-users = []
-10.times do
-	users << User.create({
-		name: Faker::Name.name,
-		email: Faker::Internet.email,
-		telephone: Faker::PhoneNumber.cell_phone
-		})
-	users.save
-end
+# users = []
+# 10.times do
+# 	users << User.create({
+# 		name: Faker::Name.name,
+# 		email: Faker::Internet.email
+# 		})
+# 	users.save
+# end
 
 

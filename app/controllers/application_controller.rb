@@ -8,7 +8,9 @@ class ApplicationController < ActionController::Base
   private 
 
   def current_user 
-  	@current_user ||= User.find(session[:user_id]) if session[:user_id]
+  	current_user ||= User.find(session[:user_id]) if session[:user_id]
+  	# If there a cookie exists or if user opens up a new one 
   end
+
 end
 

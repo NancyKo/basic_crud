@@ -6,13 +6,12 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
-		# We're not going to include this 
 	end
 
 	def create 
 		@user = User.new(strong_params)
 			if @user.save
-			redirect_to users_path, :notice => @user.email + " Signed Up now please Log in"
+			redirect_to users_path, :notice => @user.email + "Signed Up now please Log in"
 			else 
 			render 'new'
 		end
@@ -35,13 +34,12 @@ class UsersController < ApplicationController
 
 	def destroy
 		@user = User.find(params[:id])
-			redirect_to users_path 
-			@user.destroy
+		redirect_to users_path 
 	end
 	
 	private
 	def strong_params
-		params.require(:user).permit(:email, :password, :password_confirmation)
+		params.require(:user).permit(:name, :email, :password, :password_confirmation)
 	end	
 end
 
