@@ -1,0 +1,31 @@
+<h1>All Contacts</h1>
+<table>
+	<thead>
+		<tr>
+			<th> Name </th>
+			<th>			</th>
+			<th> Email </th>	
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @users.each do |user| %>
+			<tr>	
+				<td>	<%= link_to user.name, user_path(user) %> </td>
+				<td>									 </td>
+				<td>  <%= user.email %> </td>
+				<td>									  </td>
+        <td><%= link_to('Edit', edit_user_path(user)) %></td>
+        <td><%= link_to 'Remove', user_path(user), method: :delete %></td>
+        <td>
+        		<form action="<%= user_path(user) %>" method="POST">
+        			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+        			<input type="hidden" name="_method" value="delete" />
+        			<button>Delete</button>
+        		</form>
+        </td>
+			</tr>
+		<%end%>	
+		<%= link_to 'New Contact', new_user_path %>
+	</tbody>
+</table>
