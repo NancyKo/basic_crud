@@ -1,4 +1,4 @@
-<h1>All Contacts</h1>
+<h1>All Users</h1>
 <table>
 	<thead>
 		<tr>
@@ -11,7 +11,7 @@
 	<tbody>
 		<% @users.each do |user| %>
 			<tr>	
-				<td> <%= link_to user.name, user_path(user) %> </td>
+				<td> <%= link_to user.name, user_contacts_path(user) %> </td>
 				<td>									 </td>
 				<td>  <%= user.email %> </td>
 				<td>									  </td>
@@ -26,6 +26,5 @@
         </td>
 			</tr>
 		<%end%>	
-		<%= link_to 'New Contact', new_user_path %>
 	</tbody>
 </table>

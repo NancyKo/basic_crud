@@ -1,0 +1,11 @@
+<h3> Contacts </h3>
+	<% @contacts.each do |contact| %>
+	<p>
+		<%= contact.name %> <br>
+		<%= contact.email %><br>
+		<%= contact.telephone %>
+	</p>
+<% end %>
+
+<%= link_to 'Back', users_path(@user) %> |
+<%= link_to 'New Contact', new_user_contact_path(params[:user_id]) %>

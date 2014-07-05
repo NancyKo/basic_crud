@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
 
   def current_user 
   	current_user ||= User.find(session[:user_id]) if session[:user_id]
+  	rescue ActiveRecord::RecordNotFound
   	# If there a cookie exists or if user opens up a new one 
   end
 

@@ -1,0 +1,24 @@
+<h1> New Contact </h1>
+
+<%= form_for [:user, @contact] do |f| %>
+
+	<p>
+			<%= f.label :name %><br>
+			<%= f.text_field :name %>
+	</p>
+	<p>
+			<%= f.label :email %><br>
+			<%= f.text_field :email %>
+	</p>
+	<p>
+		<%= f.label :telephone %><br>
+		<%= f.telephone_field :telephone %>
+	</p>
+
+	<p class="button"><%= f.submit "Add Contact" %>
+<% end %>
+
+
+
+
+<!-- This form should add a new person to the list of names and emails  -->
