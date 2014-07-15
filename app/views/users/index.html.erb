@@ -11,19 +11,11 @@
 	<tbody>
 		<% @users.each do |user| %>
 			<tr>	
-				<td> <%= link_to user.name, user_contacts_path(user) %> </td>
+				<td> <%= link_to user.name, user_path(user) %> </td>
 				<td>									 </td>
 				<td>  <%= user.email %> </td>
 				<td>									  </td>
         <td><%= link_to('Edit', edit_user_path(user)) %></td>
-        <td><%= link_to 'Remove', user_path(user), method: :delete %></td>
-        <td>
-        		<form action="<%= user_path(user) %>" method="POST">
-        			<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
-        			<input type="hidden" name="_method" value="delete" />
-        			<button>Delete</button>
-        		</form>
-        </td>
 			</tr>
 		<%end%>	
 	</tbody>

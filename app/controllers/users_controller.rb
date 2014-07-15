@@ -4,14 +4,15 @@ class UsersController < ApplicationController
 		@users = User.all
 	end
 
-	# def show
-	# 	@user = User.find(params[:id])
-	# end
+	def show
+		@user = User.find(params[:id])
+		# @user.contacts 
+	end
 
 	def create 
 		@user = User.new(strong_params)
 			if @user.save
-			redirect_to users_path, :notice => @user.email + "Signed Up now please Log in"
+			redirect_to users_path, :notice => @user.email + " Signed Up now please Log in"
 			else 
 			render 'new'
 		end

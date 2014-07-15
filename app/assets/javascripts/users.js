@@ -1,0 +1,5 @@
+$(function() {
+	$('#contactInfo').draggable();
+  });
+});
+
