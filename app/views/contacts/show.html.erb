@@ -1,6 +1,3 @@
-<div id="contactInfo">
-	<p><%= @contact.name %></p>
-	<p><%= @contact.email %></p>
-</div>
-
+<%= @contact.name %>
+<%= @contact.email %>
 <%= link_to 'back', user_contacts_path(@contact.user) %>

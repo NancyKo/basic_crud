@@ -13,11 +13,31 @@
  *= require_tree .
  *= require_self
  */
-	
+
+/*all mobile and browser responsive */
+@media only screen and (max-width: 767px) {}
+
 body {
-		background: #fff;
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-		-webkit-text-size-adjust: 100%;
+	background: #fff;
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
  }
+
+table {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; 
+}
+
+h1, h2, h3 {
+	color: #181818;
+	font-family: "Georgia", "Times New Roman", serif;
+	font-weight: normal; 
+}
+h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+

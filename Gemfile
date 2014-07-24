@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'madmimi'
 gem 'mailchimp-api', '~> 2.0.5'
 gem 'bcrypt'
 gem 'rspec-rails'
