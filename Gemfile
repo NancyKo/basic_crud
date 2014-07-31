@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'mailchimp-api', '~> 2.0.5'
+gem 'rails_12factor'
+gem 'sendgrid'
 gem 'bcrypt'
 gem 'rspec-rails'
 gem 'faker'
