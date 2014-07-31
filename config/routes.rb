@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  root 'users#index'
+  root 'welcome#index'
 
   get "log_out" => "sessions#destroy"
   get "log_in" => "sessions#new"
