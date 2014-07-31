@@ -17,7 +17,8 @@ class UsersController < ApplicationController
 	def create 
 		@user = User.new(strong_params)
 			if @user.save
-			redirect_to current_users_path, notice: @user.email + " Signed Up now please Log in"
+				UserMailer.sign_up_email(@user).deliver 
+				redirect_to current_users_path, notice: @user.email + " Signed Up now please Log in"
 			else 
 			render 'new'
 		end
