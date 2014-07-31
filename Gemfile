@@ -19,15 +19,13 @@ gem 'rails', '4.1.1'
 gem 'httparty'
 gem 'bcrypt'
 gem 'sendgrid'
+
 group :doc do
 	gem 'sdoc', '~> 0.4.0', require: false
 end        
-  
-group :development do
-	gem 'rails_12factor'
-end
 
-group :development, :test do
-	gem 'faker'
-	gem 'pry-rails'
-end
+gem 'rails_12factor'
+
+gem 'faker'
+gem 'pry-rails'
+
