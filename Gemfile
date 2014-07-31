@@ -1,13 +1,6 @@
 source 'https://rubygems.org'
 ruby "2.1.0"
 
-gem 'sendgrid'
-gem 'pry'
-gem 'bcrypt'
-
-gem 'httparty'
-
-gem 'rails', '4.1.1'
 
 gem 'pg'
 
@@ -22,7 +15,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
+gem 'rails', '4.1.1'
+gem 'httparty'
+gem 'bcrypt'
+gem 'pry'
 
+gem 'sendgrid'
 group :doc do
 	gem 'sdoc', '~> 0.4.0', require: false
 end        
