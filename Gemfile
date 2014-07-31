@@ -3,16 +3,13 @@ ruby "2.1.0"
 
 gem 'sendgrid'
 
-<<<<<<< HEAD
 gem 'rails_12factor'
 gem 'sendgrid'
 gem 'bcrypt'
 gem 'faker'
 gem 'pry'
-=======
 gem 'bcrypt'
 
->>>>>>> 1080883c6a831bc82c7eb2ca198239b7fd7a12f5
 gem 'httparty'
 
 gem 'rails', '4.1.1'
