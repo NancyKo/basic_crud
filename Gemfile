@@ -3,19 +3,9 @@ ruby "2.1.0"
 
 gem 'sendgrid'
 
-gem 'rails_12factor'
-
 gem 'bcrypt'
 
-gem 'rspec-rails'
-
-gem 'faker'
-
-gem 'pry'
-
 gem 'httparty'
-
-gem 'pry-rails'
 
 gem 'rails', '4.1.1'
 
@@ -33,4 +23,16 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
-gem 'sdoc', '~> 0.4.0',          group: :doc
+group :doc do
+	gem 'sdoc', '~> 0.4.0', require: false
+end        
+  
+group :development do
+	gem 'rails_12factor'
+end
+
+group :development, :test do
+	gem 'rspec-rails'
+	gem 'faker'
+	gem 'pry-rails'
+end

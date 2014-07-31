@@ -12,7 +12,6 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 module BasicCrud
   class Application < Rails::Application
-    config.autoload_paths += %W(#{config.root}/app/classes)
     config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
