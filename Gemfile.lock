@@ -150,7 +150,7 @@ GEM
       json (>= 1.8.0)
 
 PLATFORMS
-  ruby
+  ruby (~> 2.1.0)
 
 DEPENDENCIES
   bcrypt
