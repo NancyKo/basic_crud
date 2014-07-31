@@ -18,8 +18,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'rails', '4.1.1'
 gem 'httparty'
 gem 'bcrypt'
-gem 'pry'
-
 gem 'sendgrid'
 group :doc do
 	gem 'sdoc', '~> 0.4.0', require: false
