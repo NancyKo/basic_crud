@@ -5,13 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  
+  <script type='text/javascripts' src="jquery.js"></script>
+  <script type='text/javascripts' src="backbone.js"></script>
+  <script type='text/javascripts' src="underscore.js"></script>
 </head>
 <body>
 		<div class="navbar">
 			<nav>
 			<% if current_user %>
 				Logged in as <%= current_user.email %> |
+				<%= link_to 'Home', users_path %> |
 				<%= link_to "Sign Out", log_out_path %>
 			<% else %>
 				<%= link_to "Sign UP", sign_up_path %> |
@@ -20,6 +23,5 @@
 		</div>
 		<% end %>
 <%= yield %>
-
 </body>
 </html>

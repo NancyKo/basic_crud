@@ -1,3 +1,4 @@
+
 <h1> <%= @user.name %> </h1>
 <h3> <%= @user.email %> </h3><br>
 
@@ -7,8 +8,8 @@
 			<tr>	
 				<td> <%= contact.name %> </td>
 				<td>									   </td>
-				<td>  <%= contact.email %> </td>
-				<td>									  </td>
+				<td>  <%= contact.email %> 	 </td>
+				<td>									 			 </td>
 				<td> <%= contact.telephone %> </td>
 				<td>									   </td>
         <td><%= link_to 'Edit', edit_user_contact_path(@user, contact) %></td>
@@ -23,8 +24,3 @@
 <%= link_to 'Back', users_path %>
 <%= link_to 'New Contact', new_user_contact_path(@user) %>
 	</div>
-
-
-
-
-
