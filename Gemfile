@@ -2,11 +2,6 @@ source 'https://rubygems.org'
 ruby "2.1.0"
 
 gem 'sendgrid'
-
-gem 'rails_12factor'
-gem 'sendgrid'
-gem 'bcrypt'
-gem 'faker'
 gem 'pry'
 gem 'bcrypt'
 
@@ -37,7 +32,6 @@ group :development do
 end
 
 group :development, :test do
-	gem 'rspec-rails'
 	gem 'faker'
 	gem 'pry-rails'
 end
