@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+
 			# if user.id != User.find(params[:id])
 			# 	notice: "Can't do that"
 			# else 
@@ -18,7 +19,8 @@ class UsersController < ApplicationController
 		@user = User.new(strong_params)
 			if @user.save
 				UserMailer.sign_up_email(@user).deliver 
-				redirect_to current_users_path, notice: @user.email + " Signed Up now please Log in"
+				# redirect_to current_users_path
+				redirect_to user_path(@user)
 			else 
 			render 'new'
 			end
