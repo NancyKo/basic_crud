@@ -15,7 +15,7 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = {host: 'localhost:3000'}
+  config.action_mailer.default_url_options = {host: 'http://http://fast-shelf-3839.herokuapp.com/'}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = 
     ActionMailer::Base.smtp_settings = {
