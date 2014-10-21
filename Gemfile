@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby "2.1.0"
 
 
+gem 'byebug'
 gem 'pg'
 
 gem 'sass-rails', '~> 4.0.3'
